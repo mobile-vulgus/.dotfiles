@@ -1,0 +1,333 @@
+#
+#  ██╗██████╗      ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗ 
+#  ██║╚════██╗    ██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝ 
+#  ██║ █████╔╝    ██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
+#  ██║ ╚═══██╗    ██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
+#  ██║██████╔╝    ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
+#  ╚═╝╚═════╝      ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝ 
+#
+#          █ ██████╗╚██████╔╝██║╚████║██║██║╚██████╔╝
+#  
+#               ~ M O B I L E  V U L G U S ~
+
+# !! Brightness controls
+# Polybar
+# dunst
+
+#########################
+#	~ S T A R T U P ~	#
+#########################
+
+set $nsi --no-startup-id
+
+#----------PROCESSES------------#
+
+# Network Manager
+exec $nsi nm-applet
+
+# Compton (~/.config/compton.conf)
+exec_always $nsi compton --config ~/.config/compton.conf
+
+# Unclutter - hides mouse pointer
+exec $nsi unclutter -idle 1 &
+
+# Task Manager
+exec $nsi xfce4-taskmanager
+
+# Power Manager
+exec $nsi xfce4-power-manager
+
+#----------APPLICATIONS---------#
+
+# Appfinder
+for_window				[class="Xfce4-appfinder"] floating enable, resize set 700 400
+bindsym $mod+x			exec xfce4-appfinder	
+
+# Dropbox
+exec $nsi dropbox start
+
+# Firefox 
+exec $nsi firefox
+assign 					[class="Firefox"] $workspace2
+
+# Standard Notes
+exec $nsi ./standard-notes-3.0.12-x86_64.AppImage
+assign 					[class="Standard Notes"] $workspace3
+for_window 				[class="Standard Notes"] floating enable, border none, resize set 1000 800
+
+# Signal
+exec $nsi signal-desktop
+assign 					[class="Signal"] $workspace4
+
+# Keepassx
+for_window 				[class="Keepassx"] floating enable
+for_window 				[class="Keepassx"] border none
+for_window				[class="Keepassx"] resize set 620 430
+for_window				[class="Keepassx"] move absolute position 650 px 200 px
+bindsym $mod+Shift+y	exec keepassx
+
+# FIX conflicts with other autostart sequence
+# pia
+# exec ./pia-linux-1.1-02537.run
+
+# pavucontrol
+# exec $nsi pavucontrol
+# assign [class="Pavucontrol"] $workspace9
+
+#####################################
+#	~ C O R E  F U N C T I O N S ~  #
+#####################################
+
+# Set Modifier key as Super-key
+set $mod Mod4
+
+# Set Terminal
+set $TERM exec urxvt 
+for_window				[class="URxvt"] floating enable, resize set 1200 500, move absolute position center
+
+
+# Set Browser
+set $BROWSER exec firefox
+
+# Set scratchpad
+# exec $nsi xfce4-terminal 	--title=scratch --disable-server &
+for_window				[instance="scratch"] floating enable
+for_window				[instance="scratch"] resize set 625 400
+for_window				[instance="scratch"] move scratchpad
+for_window				[instance="scratch"] border pixel 10
+exec $nsi urxvt -name scratch
+bindsym $mod+z 			[instance="scratch"] scratchpad show 
+
+# Font for window titles
+font pango:SourceCodePro SemiBold 10
+
+# Use Mouse+$mod to drag floating windows
+floating_modifier $mod
+
+# Windows are focused based if the mouse cursor is hovering over them
+focus_follows_mouse no
+
+# Toggle window borders
+bindsym $mod+b 			border normal
+bindsym $mod+Shift+b 	border none
+
+# Starts a terminal
+bindsym $mod+Return 	$TERM
+
+# Kill focused window
+bindsym $mod+Shift+q kill
+
+# Start rofi / Toggle between open windows (~/.config/rofi)
+bindsym $mod+d 			exec rofi -show run 
+bindsym $mod+Tab		exec rofi -show window
+
+# change focus
+bindsym $mod+j 				focus left
+bindsym $mod+k 				focus down
+bindsym $mod+l 				focus up
+bindsym $mod+semicolon 		focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left 			focus left
+bindsym $mod+Down 			focus down
+bindsym $mod+Up 			focus up
+bindsym $mod+Right 			focus right
+
+# move focused window
+bindsym $mod+Shift+h 		move left
+bindsym $mod+Shift+j 		move down
+bindsym $mod+Shift+k 		move up
+bindsym $mod+Shift+l 		move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left 	move left
+bindsym $mod+Shift+Down 	move down
+bindsym $mod+Shift+Up 		move up
+bindsym $mod+Shift+Right	move right
+
+# split in horizontal orientation
+bindsym $mod+h 			split h
+
+# split in vertical orientation
+bindsym $mod+v 			split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f 			fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s 			layout stacking
+bindsym $mod+w 			layout tabbed
+bindsym $mod+e 			layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space 	floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space 		focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a 			focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# reload the configuration file
+bindsym $mod+Shift+c 	reload
+
+# restart i3 inplace (preserves session, can be used to upgrade i3)
+bindsym $mod+Shift+r 	restart
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e 		exec "i3-nagbar -f SourceCodePro  -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+	# These bindings trigger as soon as you enter the resize mode
+	# Pressing left will shrink the window’s width.
+	# Pressing right will grow the window’s width.
+	# Pressing up will shrink the window’s height.
+	# Pressing down will grow the window’s height.
+	bindsym j resize shrink width 15 px or 15 ppt, resize shrink height 15 px or 15 ppt
+	bindsym k resize grow height 15 px or 15 ppt, resize grow width 15 px or 15 ppt
+	# bindsym l resize shrink height 10 px or 10 ppt
+	# bindsym semicolon resize grow width 10 px or 10 ppt
+
+	# same bindings, but for the arrow keys
+	bindsym Left resize shrink width 10 px or 10 ppt
+	bindsym Down resize grow height 10 px or 10 ppt
+	bindsym Up resize shrink height 10 px or 10 ppt
+	bindsym Right resize grow width 10 px or 10 ppt
+
+	# back to normal: Enter or Escape
+	# bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# Take a screenshot; +Shift screenshots only the focused window
+bindsym $mod+P				exec $nsi scrot '%Y-%m-%d-%I-%M-%S.png' -e 'mv $f ~/Pictures/'
+bindsym $mod+Shift+P		exec $nsi scrot -u '%Y-%m-%d-%I-%M-%S.png' -e 'mv $f ~/Pictures/'
+
+#################################
+# 	~ W O R K S P A C E S ~ 	#
+#################################
+
+## set $workspace1 "1: "
+# set $workspace2 "2: "
+# set $workspace3 "3: "
+# set $workspace4 "4: "
+# set $workspace5 "5: "
+# set $workspace9 "9: "
+
+set $workspace1 "1 "
+set $workspace2 "2 "
+set $workspace3 "3 "
+set $workspace4 "4 "
+set $workspace5 "5 "
+set $workspace6 "6 "
+set $workspace7 "7 "
+set $workspace8 "8 "
+set $workspace9 "9 "
+# set $workspace10 "10 "
+
+# switch to workspaces
+bindsym $mod+1 workspace $workspace1 
+bindsym $mod+2 workspace $workspace2
+bindsym $mod+3 workspace $workspace3
+bindsym $mod+4 workspace $workspace4
+bindsym $mod+5 workspace $workspace5
+bindsym $mod+6 workspace $workspace6
+bindsym $mod+7 workspace $workspace7
+bindsym $mod+8 workspace $workspace8
+bindsym $mod+9 workspace $workspace9
+# bindsym $mod+0 workspace $workspace10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+2 move container to workspace $workspace2
+bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace $workspace7
+bindsym $mod+Shift+8 move container to workspace $workspace8
+bindsym $mod+Shift+9 move container to workspace $workspace9
+# bindsym $mod+Shift+0 move container to workspace $workspace10
+
+# toggle between last workspace 
+# (e.g., if on WS2 and you switch to WS3 with Mod+3, 
+# to return to WS2 type Mod+3 again)
+workspace_auto_back_and_forth yes
+
+#########################################################
+#	~ C O L O R S / B O R D E R S / B A R ~ 	#
+#########################################################
+
+
+#------------------W I N D O W S------------------------#
+# Remove borders that touch screen edge
+hide_edge_borders smart
+
+# Print all window titles in bold
+for_window 				[class=".*"] title_format "<b>%title</b>"
+
+# Removes all titles by default; can still be toggled on/off
+for_window 				[class=".*"] border pixel 3
+
+# Make a focused window sticky
+bindsym $mod+Shift+s	sticky toggle
+
+# Floating by default
+for_window 				[class="Evince"] floating enable, resize set 700 600
+for_window 				[class="Thunar"] floating enable
+for_window 				[class="Eog"] floating enable
+for_window 				[class="vlc"] floating enable, resize set 700 600
+for_window				[class="Font Manager"] floating enable, resize set 700 600
+for_window				[class="Xfce-power-manager"] floating enable, resize set 700 600
+for_window				[class="Xfce-taskmanager"] floating enable, resize set 700 600
+
+
+#------------------C O L O R S--------------------------#
+# "child_border"=window frame; "border"=lines around titlebar
+
+# class                 border  backgr. text    indcatr child_border
+client.focused          #1E081F #1e081f #ffffff #1E081F #e2e2e2
+client.focused_inactive #1E081F #1E081F #404040 #1E081F #1E081F
+client.unfocused        #1E081F #1E081F #404040 #1E081F #1E081F
+client.urgent           #f04878 #f04878 #404040 #000000 #000000
+client.placeholder      #000000 #0c0c0c #fffbfa #000000 #0c0c0c
+client.background       #000000
+
+bar {
+	position top
+	status_command i3status
+	font pango:SourceCodePro SemiBold 10
+	separator_symbol " "
+	tray_padding 1
+	colors {
+		background #211E24
+		statusline #D0DADE
+		separator  #211E24
+		#class             border  backgrd text
+		focused_workspace  #D0DADE #D0DADE #211E24
+		active_workspace   #1E081F #1E081F #D0DADE
+		inactive_workspace #1E081F #1E081F #D0DADE
+		urgent_workspace   #BA9054 #BA9054 #211E24 
+	} 
+}
+
+# Background Wallpaper: Eclipse by Alena Aenami
+# https://www.artstation.com/aenamiart
+exec $nsi feh --bg-scale ~/Pictures/eclipse.jpg
+
+# FIX Brightness (Still broken and janky)
+bindsym XF86MonBrightnessUp exec xrandr --output eDP-1 --brightness 1.0 
+bindsym XF86MonBrightnessDown exec xrandr --output eDP-1 --brightness 0.5
+
+# Audio
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 4%+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 4%- unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle
+
+

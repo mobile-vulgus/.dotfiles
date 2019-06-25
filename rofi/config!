@@ -1,0 +1,40 @@
+# ██████╗  ██████╗ ███████╗██╗
+# ██╔══██╗██╔═══██╗██╔════╝██║
+# ██████╔╝██║   ██║█████╗  ██║
+# ██╔══██╗██║   ██║██╔══╝  ██║
+# ██║  ██║╚██████╔╝██║     ██║
+# ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝
+#
+#  ~M O B I L E  V U L G U S~    
+
+# rofi.terminal:		xfce4-terminal
+rofi.terminal:			urxvt
+
+rofi.modi:		window,run,ssh
+# rofi.font:		SourceCodePro SemiBold 10
+rofi.font:		bitocra13 regular 10
+rofi.separator-style:	solid
+rofi.width:		45
+rofi.columns:		1
+rofi.lines:		13
+rofi.bw:		1
+rofi.padding:		30
+rofi.fixed-num-lines:	true
+rofi.eh:		1
+rofi.line-margin:	3
+rofi.line-padding:	3
+rofi.fake-transparency:	false
+rofi.scrollbar-width:	.5
+rofi.scroll-method:	1
+
+
+rofi.color-enabled:	true
+
+# State:            #backg  #foreg  #bgalt  #highl  #highl text
+rofi.color-normal:	#212121,#ff6666,#212121,#ff6666,#212121
+rofi.color-urgent:	#fdf6e3,#dc322f,#eee8d5,#dc322f,#fdf6e3
+rofi.color-active:	#fdf6e3,#268bd2,#eee8d5,#268bd2,#fdf6e3
+
+						#window #border
+rofi.color-window:      #212121,#ff6666
+
