@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/etc/apt/apt.conf.d'
+let g:netrw_dirhist_2='/usr/share/lightdm/lightdm-gtk-greeter.conf.d'
+let g:netrw_dirhist_3='/home/terminus/.vim'
+let g:netrw_dirhist_4='/home/terminus/.vim/plugged/lightline.vim'
+let g:netrw_dirhist_5='/home/terminus/.config/i3status'
+let g:netrw_dirhist_6='/home/terminus/.config/rofi'
+let g:netrw_dirhist_7='/home/terminus/.config/dunst'
+let g:netrw_dirhist_8='/home/terminus/.config/neofetch'

@@ -1,0 +1,163 @@
+" ██╗   ██╗██╗███╗   ███╗
+" ██║   ██║██║████╗ ████║
+" ██║   ██║██║██╔████╔██║
+" ╚██╗ ██╔╝██║██║╚██╔╝██║
+"  ╚████╔╝ ██║██║ ╚═╝ ██║
+"   ╚═══╝  ╚═╝╚═╝     ╚═╝
+
+" ~ M O B I L E  V U L G U S ~
+
+
+"---------- S T A R T U P----------
+
+" Ensures that various options are properly set to work with the
+" Vim-related packages available in Debian.
+runtime! debian.vim
+
+" Vim jumps to the last position when reopening a file
+if has("autocmd") 
+	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+" Set compatibility to Vim only
+set nocompatible
+
+" Remaps Escape to CapsLock (Escape still works too) for easier home-rowing
+au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+
+" Removes intro message when opening new file
+set shortmess=I
+
+"-------------- P L U G I N S -------------
+
+" List of plugins
+call plug#begin('~/.vim/plugged') 
+Plug 'https://github.com/tpope/vim-fugitive' 
+Plug 'https://github.com/junegunn/goyo.vim' 
+Plug 'https://github.com/junegunn/limelight.vim' 
+Plug 'https://github.com/reedes/vim-wordy' 
+Plug 'https://github.com/merijn/writegooder.vim'
+Plug 'https://github.com/itchyny/lightline.vim'
+Plug 'https://github.com/chriskempson/base16-vim'
+Plug 'https://github.com/sainnhe/vim-color-forest-night'
+Plug 'https://github.com/szw/vim-dict'
+call plug#end()
+
+" Goyo/Limelight start together; faded text color
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight
+let g:limelight_conceal_guifg = 'DarkGray'
+let g:limelight_conceal_guifg = '777777'
+let g:limelight_conceal_ctermfg = 'DarkGrey'
+
+
+"-------T E X T  F O R M A T T I N G------- 
+
+set t_Co=256
+
+if !has('gui_running')
+  set t_Co=256
+endif
+
+" Turn on syntax highlighting
+syntax on
+
+" Show line numbers
+set number
+highlight LineNr ctermfg=DarkGray
+
+" Hide tilde lines on empty lines; also affects background color where no
+" text has yet been entered
+" hi NonText cterm=NONE ctermbg=233 ctermfg=233
+
+" Show matching brackets
+set showmatch
+
+" How Vim formats text: 
+" t (auto-wrap using textwidth), 
+" c (auto-wrap comments using textwidth), 
+" q (allow formatting of comments with 'gq'), 
+" n (recognize number lists--uses 'formatlistpat', default is to find number
+"   followed by '.', ':', ')', ']', or '}'. 'Autoindent' must be set too. Add
+"   '1' after 'n' to wrap to same indent as first numbered item), 
+" w (trailing white space indicates a paragraph that continues in the next
+"   line; a line that ends in a non-white character ends a paragraph),
+" a (automatic formatting of paragraphs; when 'c' flag is present this only
+"   happens for recognized comments),
+set formatoptions=tcqn1
+
+" Copy indent from current line when starting new line
+set autoindent
+
+" Max width of text line
+set textwidth=75
+
+" Wraps long lines at a character in 'breakat'. Does not insert EOLs in
+" file, only affects display
+set linebreak
+
+" Number of spaces in a Tab
+set tabstop=4
+
+" Number of characters from the right window border where wrapping starts.
+" When typing beyond this limit, an EOL is inseted. 
+set wrapmargin=5
+
+" Fixes common backspace problems
+set backspace=indent,eol,start
+
+" Adds left margin, max setting is 12. Goyo replaces this. 
+" set foldcolumn=10
+" hi foldcolumn ctermbg=none
+
+
+"-------S T A T U S L I N E-------- 
+
+set showmode
+set laststatus=2
+
+" Statusline elements; overwritten by Lightline
+" set statusline=%f\ %h%w%m%r%=%-14.(%l,%c%V%)\ %P
+" set statusline=%!MyStatusLine()
+"function! MyStatusLine()
+"		let l:w = min([14,winwidth(0)/2-3])
+"		return '%f %h%w%m%r=%-' . l:w . '.(%l,%c%V%) %P'
+"endfunction
+
+" Lightline 
+let g:lightline = {
+	\ 'colorscheme': 'darcula',
+	\ }
+
+
+"-------S E A R C H I N G----------
+
+" Ignore case when searching
+set ignorecase
+
+" Show partial command in bottom-left of screen 
+set showcmd
+
+" Enable incremental search
+set incsearch
+
+" Include only uppercase words with uppercase search term
+set smartcase
+
+" For regular expressions turn 'magic' on; required for plugins
+set magic
+
+
+"--------O T H E R  O P T I O N S---------
+
+" Enable mouse
+set mouse=a
+
+" Automatically saves file before running 'make'
+set autowrite
+
+" Dictionary
+let g:dict_hosts = [
+	\["dict.org", ["all"]],
+\]
