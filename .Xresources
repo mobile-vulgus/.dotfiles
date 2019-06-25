@@ -1,0 +1,128 @@
+!    ██╗  ██╗██████╗ ███████╗███████╗ ██████╗ ██╗   ██╗██████╗  ██████╗███████╗███████╗
+!    ╚██╗██╔╝██╔══██╗██╔════╝██╔════╝██╔═══██╗██║   ██║██╔══██╗██╔════╝██╔════╝██╔════╝
+!     ╚███╔╝ ██████╔╝█████╗  ███████╗██║   ██║██║   ██║██████╔╝██║     █████╗  ███████╗
+!     ██╔██╗ ██╔══██╗██╔══╝  ╚════██║██║   ██║██║   ██║██╔══██╗██║     ██╔══╝  ╚════██║
+! ██╗██╔╝ ██╗██║  ██║███████╗███████║╚██████╔╝╚██████╔╝██║  ██║╚██████╗███████╗███████║
+! ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚══════╝╚══════╝
+  
+! 			~ M O B I L E  V U L G U S ~
+
+! Base16 Material Palenight
+! Scheme: Nate Peterson; altered by me
+
+#define base00 #212121
+#define base01 #303030
+#define base02 #353535
+#define base03 #4a4a4a
+#define base04 #b2ccd6
+#define base05 #eeffff
+#define base06 #eeffff
+#define base07 #ffffff
+#define base08 #f07178
+#define base09 #f78c6c
+#define base0A #ffcb6b
+#define base0B #c3e88d
+! #define base0C #89ddff
+#define base0C #ff6666
+#define base0D #82aaff
+#define base0E #c792ea
+#define base0F #ff5370
+
+*foreground:   base05
+#ifdef background_opacity
+*background:   [background_opacity]base00
+#else
+*background:   base00
+#endif
+*cursorColor:  base05
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base08
+*color10:      base0B
+*color11:      base0A
+*color12:      base0D
+*color13:      base0E
+*color14:      base0C
+*color15:      base07
+
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+*color16:      base09
+*color17:      base0F
+*color18:      base01
+*color19:      base02
+*color20:      base04
+*color21:      base06
+
+!--------------------------------------------------------------------
+! URxvt Settings
+!--------------------------------------------------------------------
+
+urxvt.font: xft:bitocra13full:style=regular:size=11
+urxvt.boldFont: xft:bitocra13full:style=regular:size=12
+URxvt.letterspace: 0
+URxvt.lineSpace: -1
+URxvt.scrollBar: false
+URxvt.cursorBlink: false
+URxvt.internalBorder: 60
+URxvt.perl-ext: default,matcher
+URxvt.matcher.button: 1
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.visualBell: false
+URxvt.depth: 20
+URxvt.geometry: 65x19
+URxvt.intensityStyles: false
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.keysym.Home: \033[1~
+URxvt.keysym.End: \033[4~
+URxvt.keysym.KP_Home: \033[1~
+URxvt.keysym.KP_End:  \033[4~
+
+!--------------------------------------------------------------------
+! URxvt Color
+!--------------------------------------------------------------------
+
+URxvt*foreground:   base05
+#ifdef background_opacity
+URxvt*background:   [background_opacity]base00
+#else
+URxvt*background:   base00
+#endif
+URxvt*cursorColor:  base05
+
+URxvt*color0:       base00
+URxvt*color1:       base08
+URxvt*color2:       base0B
+URxvt*color3:       base0A
+URxvt*color4:       base0D
+URxvt*color5:       base0E
+URxvt*color6:       base0C
+URxvt*color7:       base05
+
+URxvt*color8:       base03
+URxvt*color9:       base08
+URxvt*color10:      base0B
+URxvt*color11:      base0A
+URxvt*color12:      base0D
+URxvt*color13:      base0E
+URxvt*color14:      base0C
+URxvt*color15:      base07
+
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+URxvt*color16:      base09
+URxvt*color17:      base0F
+URxvt*color18:      base01
+URxvt*color19:      base02
+URxvt*color20:      base04
+URxvt*color21:      base06
