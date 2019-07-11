@@ -15,15 +15,14 @@
 #define base02 #353535
 #define base03 #4a4a4a
 #define base04 #b2ccd6
-#define base05 #eeffff
+#define base05 #ff6666
 #define base06 #eeffff
 #define base07 #ffffff
 #define base08 #f07178
 #define base09 #f78c6c
 #define base0A #ffcb6b
 #define base0B #c3e88d
-! #define base0C #89ddff
-#define base0C #ff6666
+#define base0C #fc8cae
 #define base0D #82aaff
 #define base0E #c792ea
 #define base0F #ff5370
@@ -67,10 +66,12 @@
 ! URxvt Settings
 !--------------------------------------------------------------------
 
-urxvt.font: xft:bitocra13full:style=regular:size=11
-urxvt.boldFont: xft:bitocra13full:style=regular:size=12
-URxvt.letterspace: 0
-URxvt.lineSpace: -1
+! URxvt.font: xft:bitocra13full:style=regular:size=12 
+! URxvt.boldFont: xft:Source Code Pro Semibold:pixelsize=10 
+URxvt.font: xft:Iosevka SS01:style=Medium:pixelsize=11.5
+URxvt.boldFont: xft:Iosevka SS01:style=Extrabold:pixelsize=11.5
+URxvt.letterSpace: 1
+URxvt.lineSpace: 2
 URxvt.scrollBar: false
 URxvt.cursorBlink: false
 URxvt.internalBorder: 60
