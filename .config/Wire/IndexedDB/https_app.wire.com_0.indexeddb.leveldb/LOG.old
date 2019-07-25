@@ -1,0 +1,40 @@
+2019/01/28-19:12:57.772 18465 Reusing MANIFEST /home/terminus/.config/Wire/IndexedDB/https_app.wire.com_0.indexeddb.leveldb/MANIFEST-000001
+2019/01/28-19:12:57.772 18465 Recovering log #85
+2019/01/28-19:12:57.846 18465 Reusing old log /home/terminus/.config/Wire/IndexedDB/https_app.wire.com_0.indexeddb.leveldb/000085.log 
+2019/02/09-12:03:17.277 19718 Level-0 table #90: started
+2019/02/09-12:03:17.326 19718 Level-0 table #90: 741133 bytes OK
+2019/02/09-12:03:17.339 19718 Delete type=0 #85
+2019/02/09-12:03:17.928 19718 Compacting 1@0 + 1@1 files
+2019/02/09-12:03:18.021 19718 Generated table #91@0: 34097 keys, 1556450 bytes
+2019/02/09-12:03:18.021 19718 Compacted 1@0 + 1@1 files => 1556450 bytes
+2019/02/09-12:03:18.024 19718 compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/02/09-12:03:18.025 19718 Delete type=2 #90
+2019/02/09-12:03:18.025 19718 Delete type=2 #87
+2019/02/09-12:17:53.281 19718 Level-0 table #93: started
+2019/02/09-12:17:53.319 19718 Level-0 table #93: 905076 bytes OK
+2019/02/09-12:17:53.323 19718 Delete type=0 #89
+2019/02/09-12:17:54.873 19718 Compacting 1@0 + 1@1 files
+2019/02/09-12:17:54.950 19718 Generated table #94@0: 39369 keys, 1785445 bytes
+2019/02/09-12:17:54.950 19718 Compacted 1@0 + 1@1 files => 1785445 bytes
+2019/02/09-12:17:54.963 19718 compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/02/09-12:17:54.963 19718 Delete type=2 #93
+2019/02/09-12:17:54.963 19718 Delete type=2 #91
+2019/02/09-12:24:57.838 19718 Level-0 table #96: started
+2019/02/09-12:24:57.877 19718 Level-0 table #96: 940395 bytes OK
+2019/02/09-12:24:57.888 19718 Delete type=0 #92
+2019/02/09-12:25:04.847 19718 Compacting 1@0 + 1@1 files
+2019/02/09-12:25:04.921 19718 Generated table #97@0: 44258 keys, 2002916 bytes
+2019/02/09-12:25:04.921 19718 Compacted 1@0 + 1@1 files => 2002916 bytes
+2019/02/09-12:25:04.924 19718 compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/02/09-12:25:04.924 19718 Delete type=2 #94
+2019/02/09-12:25:04.925 19718 Delete type=2 #96
+2019/02/09-13:42:09.356 19718 Level-0 table #99: started
+2019/02/09-13:42:09.396 19718 Level-0 table #99: 972046 bytes OK
+2019/02/09-13:42:09.404 19718 Delete type=0 #95
+2019/02/09-13:42:24.137 19718 Compacting 1@0 + 1@1 files
+2019/02/09-13:42:24.220 19718 Generated table #100@0: 48370 keys, 2196005 bytes
+2019/02/09-13:42:24.239 19718 Generated table #101@0: 297 keys, 8901 bytes
+2019/02/09-13:42:24.239 19718 Compacted 1@0 + 1@1 files => 2204906 bytes
+2019/02/09-13:42:24.242 19718 compacted to: files[ 0 2 1 0 0 0 0 ]
+2019/02/09-13:42:24.242 19718 Delete type=2 #97
+2019/02/09-13:42:24.243 19718 Delete type=2 #99

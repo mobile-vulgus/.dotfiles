@@ -1,0 +1,65 @@
+00:00:00.000377 main     VirtualBox XPCOM Server 6.0.8 r130520 linux.amd64 (May 13 2019 14:21:13) release log
+00:00:00.000383 main     Log opened 2019-06-10T20:08:44.204322000Z
+00:00:00.000385 main     Build Type: release
+00:00:00.000390 main     OS Product: Linux
+00:00:00.000392 main     OS Release: 4.9.0-3-amd64
+00:00:00.000393 main     OS Version: #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19)
+00:00:00.000426 main     DMI Product Name: 20B7003VUS
+00:00:00.000437 main     DMI Product Version: ThinkPad T440
+00:00:00.000520 main     Host RAM: 7678MB (7.4GB) total, 7096MB (6.9GB) available
+00:00:00.000528 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.000529 main     Process ID: 32595
+00:00:00.000530 main     Package type: LINUX_64BITS_DEBIAN_9_0
+00:00:00.003131 main     IPC socket path: /tmp/.vbox-terminus-ipc/ipcd
+00:00:00.107885 nspr-2   VirtualBox: object creation starts
+00:00:00.107971 nspr-2   Home directory: '/home/terminus/.config/VirtualBox'
+00:00:00.108157 nspr-2   Loading settings file "/home/terminus/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.112998 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp3s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.114275 nspr-2   NAT: resolv.conf: nameserver 192.168.50.1
+00:00:00.114320 nspr-2   HostDnsMonitor::updateInfo
+00:00:00.114359 nspr-2   HostDnsMonitor: old information
+00:00:00.114366 nspr-2     no server entries
+00:00:00.114373 nspr-2     no domain set
+00:00:00.114378 nspr-2     no search string entries
+00:00:00.114384 nspr-2   HostDnsMonitor: new information
+00:00:00.114389 nspr-2     server 1: 192.168.50.1
+00:00:00.114396 nspr-2     no domain set
+00:00:00.114401 nspr-2     no search string entries
+00:00:00.119652 nspr-2   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:00.119873 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.124733 nspr-2   Loading settings file "/home/terminus/VirtualBox VMs/Elementary/Elementary.vbox" with version "1.16-linux"
+00:00:00.125196 nspr-2   VirtualBox: object created
+00:00:00.432983 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:00:00.514904 nspr-3   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:00.594270 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:00:00.595154 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:00:02.770858 nspr-3   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:02.783551 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:00:02.784477 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:00:03.245260 Watcher  ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The virtual machine 'Elementary' has terminated unexpectedly during startup with exit code 1 (0x1)}, preserve=false aResultDetail=0
+00:00:03.819912 nspr-4   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:03.829923 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:00:03.832007 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:04:23.169734 nspr-4   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:04:23.184990 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:04:23.185767 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:04:23.649945 Watcher  ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The virtual machine 'Elementary' has terminated unexpectedly during startup with exit code 1 (0x1)}, preserve=false aResultDetail=0
+00:04:24.215073 nspr-2   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:04:24.226141 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:04:24.226913 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:07:39.371623 nspr-2   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:07:39.400599 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:07:39.401944 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:07:39.824990 Watcher  ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={5047460a-265d-4538-b23e-ddba5fb84976} aComponent={MachineWrap} aText={The virtual machine 'Elementary' has terminated unexpectedly during startup with exit code 1 (0x1)}, preserve=false aResultDetail=0
+00:07:40.408636 nspr-4   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:07:40.421204 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:07:40.421977 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={dbe11e5f-7f10-46e7-94c4-1e95bf4b6627} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+00:09:32.814447 nspr-3   Saving settings file "/home/terminus/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:09:32.828998 nspr-4   Saving settings file "/home/terminus/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:09:32.850567 nspr-3   Saving settings file "/home/terminus/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:09:32.867777 nspr-3   Saving settings file "/home/terminus/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:09:38.396330 main     VirtualBox: object deletion starts
+00:09:38.396427 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/terminus/VirtualBox VMs/Elementary/Elementary.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:09:38.860133 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:09:43.397724 main     {00007f5618010490} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_TIMEOUT
+00:09:43.397969 main     VirtualBox: object deleted

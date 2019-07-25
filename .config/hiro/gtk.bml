@@ -1,0 +1,11 @@
+Geometry
+  FrameX: 3
+  FrameY: 3
+  FrameWidth: 6
+  FrameHeight: 6
+  MenuHeight: 21
+  StatusHeight: 15
+
+Window
+  BackgroundColor: 15592683
+

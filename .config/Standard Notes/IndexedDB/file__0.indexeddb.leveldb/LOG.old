@@ -1,0 +1,5 @@
+2019/07/25-11:51:41.763 6313 Reusing MANIFEST /home/terminus/.config/Standard Notes/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2019/07/25-11:51:41.763 6313 Recovering log #131
+2019/07/25-11:51:41.769 6313 Level-0 table #134: started
+2019/07/25-11:51:41.846 6313 Level-0 table #134: 3335443 bytes OK
+2019/07/25-11:51:41.856 6313 Delete type=0 #131

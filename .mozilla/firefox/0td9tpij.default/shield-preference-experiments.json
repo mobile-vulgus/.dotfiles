@@ -1,0 +1,1 @@
+{"pref-rollout-geolocation-os-api-lte-60-linux-1527748":{"name":"pref-rollout-geolocation-os-api-lte-60-linux-1527748","branch":"rollout","expired":true,"lastSeen":"2019-05-20T20:02:37.453Z","preferenceName":"geo.provider.use_gpsd","preferenceValue":true,"preferenceType":"boolean","previousPreferenceValue":null,"preferenceBranchType":"default","experimentType":"exp"}}

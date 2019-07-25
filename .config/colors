@@ -1,0 +1,66 @@
+#################################
+#	COLOR MASTER FILE	#
+#################################
+# Switch to Xresources you lazy bastard
+
+# Terminal colors
+Text:		#F97428
+Cursor:		#F97428
+Background:	#1E081F
+Palette:
+
+
+# i3 colors
+
+
+# rofi colors
+	-color-normal [string]                  Color scheme for normal row
+	argb:00272822, #f8f8f2, argb:00272822, #141411, #f8f8f2 (File)
+	-color-urgent [string]                  Color scheme for urgent row
+	argb:00272822, #f92672, argb:00272822, #f92672, #f8f8f2 (File)
+	-color-active [string]                  Color scheme for active row
+	argb:00272822, #a6e22a, argb:00272822, #141411, #a6e22a (File)
+	-color-window [string]                  Color scheme window
+	argb:ee272822, #002b36, #e6db74 (File)
+
+
+ 	******EXAMPLE XRESOURCES 
+SETUP******
+	*cursorColor:                         #FFFF00
+ 	*colorIT:                             #E3AB8D
+	*colorBD:                             #F0E5DF
+	*colorUL:                             #cd546c
+	*VT100.colorBDMode:                   true
+	*VT100.colorBD:                       red
+	*VT100.colorULMode:                   true
+	*VT100.colorUL:                       magenta
+	*VT100.veryBoldColors:                6
+
+
+	*foreground:    #FFFFFF
+	*background:    #000000
+
+	! Black         Black !
+	*color0:        #101010
+	*color8:        #272727
+	! Red           Red   !
+	*color1:        #660000
+	*color9:        #AA0000
+	! Green         Green !
+	*color2:        #66CD00
+	*color10:       #6EFF70
+	! Yellow        Yellow!
+	*color3:        #FFFF00
+	*color11:       #AFFF0F
+	! Blue          Blue  !
+	*color4:        #7AA9DD
+	*color12:       #7EB6FF
+	! Magenta       Magenta
+	*color5:        #8B008B
+	*color13        #8B0A50
+	! Cyan          Cyan  !
+	*color6:        #008B8B
+	*color14:       #00B2EE
+	! White         White !
+	*color7:        #DDDDA9
+	*color15: 	#DBDAC1

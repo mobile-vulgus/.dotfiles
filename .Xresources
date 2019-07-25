@@ -33,7 +33,7 @@
 #else
 *background:   base00
 #endif
-*cursorColor:  base05
+*cursorColor:  base0E
 
 *color0:       base00
 *color1:       base08
@@ -66,12 +66,11 @@
 ! URxvt Settings
 !--------------------------------------------------------------------
 
-! URxvt.font: xft:bitocra13full:style=regular:size=12 
-! URxvt.boldFont: xft:Source Code Pro Semibold:pixelsize=10 
-URxvt.font: xft:Iosevka SS01:style=Medium:pixelsize=11.5
-URxvt.boldFont: xft:Iosevka SS01:style=Extrabold:pixelsize=11.5
+URxvt.font: xft:bitocra13full:style=regular:size=14 
+URxvt.boldFont: xft:bitocra13full:style=regular:size=14
+! URxvt.boldFont: xft:Source Code Pro Black:style=Black Italic:pixelsize=17
 URxvt.letterSpace: 1
-URxvt.lineSpace: 2
+URxvt.lineSpace: 1
 URxvt.scrollBar: false
 URxvt.cursorBlink: false
 URxvt.internalBorder: 60
@@ -79,15 +78,15 @@ URxvt.perl-ext: default,matcher
 URxvt.matcher.button: 1
 URxvt.url-launcher: /usr/bin/firefox
 URxvt.visualBell: false
-URxvt.depth: 20
+! URxvt.depth: 20
 URxvt.geometry: 65x19
-URxvt.intensityStyles: false
-URxvt.iso14755: false
-URxvt.iso14755_52: false
-URxvt.keysym.Home: \033[1~
-URxvt.keysym.End: \033[4~
-URxvt.keysym.KP_Home: \033[1~
-URxvt.keysym.KP_End:  \033[4~
+! URxvt.intensityStyles: false
+! URxvt.iso14755: false
+! URxvt.iso14755_52: false
+! URxvt.keysym.Home: \033[1~
+! URxvt.keysym.End: \033[4~
+! URxvt.keysym.KP_Home: \033[1~
+! URxvt.keysym.KP_End:  \033[4~
 
 !--------------------------------------------------------------------
 ! URxvt Color

@@ -1,0 +1,30 @@
+git commands:
+	1. copy files to repo (~./Documents/.dotfiles)
+	2. cd to repo
+	3. git add 'files'
+	4. git commit -m "Message about this commit instance"
+	5. git push
+
+bash
+.bashrc
+
+compton
+.config/compton.conf
+
+i3wm
+.config/i3/config
+
+i3status
+.config/i3status/config
+
+neofetch
+.config/neofetch.config
+
+rofi
+.config/rofi
+
+vim
+.vimrc
+
+Xresources
+.Xresources

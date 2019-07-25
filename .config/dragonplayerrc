@@ -1,0 +1,21 @@
+[General]
+Recent Urls[$e]=file:///run/user/1000/gvfs/afp-volume:host=Brain.local\\,user=timothymerritt\\,volume=SkyDrive/%23ISOs/Last.Week.Tonight.with.John.Oliver.S06E13.1080p.AMZN.WEB-DL.DDP2.0.H.264-monkee[TGx]/Last.Week.Tonight.with.John.Oliver.S06E13.1080p.AMZN.WEB-DL.DDP2.0.H.264-monkee.mkv
+TimeFormat=1
+Volume=1
+
+[MainWindow]
+Height 900=870
+State=AAAA/wAAAAD9AAAAAAAAAg8AAAMfAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1600=527
+
+[file:///run/user/1000/gvfs/afp-volume:host=Brain.local,user=timothymerritt,volume=SkyDrive/%23ISOs/Last.Week.Tonight.with.John.Oliver.S06E13.1080p.AMZN.WEB-DL.DDP2.0.H.264-monkee\x5bTGx\x5d/Last.Week.Tonight.with.John.Oliver.S06E13.1080p.AMZN.WEB-DL.DDP2.0.H.264-monkee.mkv]
+Brightness=0
+Contrast=0
+Date=2019,6,15
+Hue=0
+IsVideo=true
+Position=15455
+Preferred Size=527,799
+Saturation=0
+Subtitle=1

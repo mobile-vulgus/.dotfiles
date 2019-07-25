@@ -1,0 +1,36 @@
+00:00:00.000648 main     VirtualBox XPCOM Server 6.0.8 r130520 linux.amd64 (May 13 2019 14:21:13) release log
+00:00:00.000652 main     Log opened 2019-06-10T12:32:31.983779000Z
+00:00:00.000653 main     Build Type: release
+00:00:00.000658 main     OS Product: Linux
+00:00:00.000658 main     OS Release: 4.9.0-3-amd64
+00:00:00.000659 main     OS Version: #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19)
+00:00:00.000692 main     DMI Product Name: 20B7003VUS
+00:00:00.000708 main     DMI Product Version: ThinkPad T440
+00:00:00.000941 main     Host RAM: 7678MB (7.4GB) total, 5983MB (5.8GB) available
+00:00:00.000947 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.000948 main     Process ID: 28428
+00:00:00.000949 main     Package type: LINUX_64BITS_DEBIAN_9_0
+00:00:00.003550 main     IPC socket path: /tmp/.vbox-terminus-ipc/ipcd
+00:00:00.107231 nspr-2   VirtualBox: object creation starts
+00:00:00.107308 nspr-2   Home directory: '/home/terminus/.config/VirtualBox'
+00:00:00.107473 nspr-2   Loading settings file "/home/terminus/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.110359 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp3s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.110842 nspr-2   NAT: resolv.conf: nameserver 192.168.50.1
+00:00:00.110856 nspr-2   HostDnsMonitor::updateInfo
+00:00:00.110867 nspr-2   HostDnsMonitor: old information
+00:00:00.110870 nspr-2     no server entries
+00:00:00.110872 nspr-2     no domain set
+00:00:00.110874 nspr-2     no search string entries
+00:00:00.110875 nspr-2   HostDnsMonitor: new information
+00:00:00.110877 nspr-2     server 1: 192.168.50.1
+00:00:00.110880 nspr-2     no domain set
+00:00:00.110881 nspr-2     no search string entries
+00:00:00.113512 nspr-2   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:00.113700 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.120596 nspr-2   Loading settings file "/home/terminus/VirtualBox VMs/Elementary/Elementary.vbox" with version "1.16-linux"
+00:00:00.121303 nspr-2   VirtualBox: object created
+00:00:07.142057 main     VirtualBox: object deletion starts
+00:00:07.142172 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/terminus/VirtualBox VMs/Elementary/Elementary.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:00:07.623533 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:12.143532 main     {00007f5434010490} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_TIMEOUT
+00:00:12.143748 main     VirtualBox: object deleted

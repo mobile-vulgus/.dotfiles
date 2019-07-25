@@ -9,7 +9,7 @@
                     
 
 alias ll='ls -aCF'
-alias la='ls -ax'
+alias la='ls -alh'
 alias cv='clear'
 alias si3='vim .config/i3/config'
 alias si3s='vim .config/i3status/config'

@@ -1,0 +1,18 @@
+2019/07/24-15:11:04.714 1782 Reusing MANIFEST /home/terminus/.config/Signal/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2019/07/24-15:11:04.714 1782 Recovering log #454
+2019/07/24-15:11:04.715 1782 Reusing old log /home/terminus/.config/Signal/IndexedDB/file__0.indexeddb.leveldb/000454.log 
+2019/07/24-15:11:05.243 1788 Current memtable full; waiting...
+2019/07/24-15:11:05.250 1975 Level-0 table #459: started
+2019/07/24-15:11:05.269 1975 Level-0 table #459: 309 bytes OK
+2019/07/24-15:11:05.285 1975 Delete type=0 #454
+2019/07/24-15:11:05.286 1975 Level-0 table #461: started
+2019/07/24-15:11:05.286 1975 Level-0 table #461: 0 bytes OK
+2019/07/24-15:11:05.302 1975 Delete type=0 #458
+2019/07/24-15:11:05.302 1975 Manual compaction at level-0 from '\x00M\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00N\x00\x00\x00' @ 0 : 0; will stop at '\x00M\x00\x00\x05' @ 766 : 1
+2019/07/24-15:11:05.302 1975 Compacting 1@0 + 1@1 files
+2019/07/24-15:11:05.307 1975 Generated table #462@0: 3 keys, 272 bytes
+2019/07/24-15:11:05.307 1975 Compacted 1@0 + 1@1 files => 272 bytes
+2019/07/24-15:11:05.315 1975 compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/07/24-15:11:05.315 1975 Delete type=2 #456
+2019/07/24-15:11:05.315 1975 Delete type=2 #459
+2019/07/24-15:11:05.315 1975 Manual compaction at level-0 from '\x00M\x00\x00\x05' @ 766 : 1 .. '\x00N\x00\x00\x00' @ 0 : 0; will stop at (end)

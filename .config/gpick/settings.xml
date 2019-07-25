@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding='UTF-8'?><root>
+<gpick type="dynv">
+<converters type="dynv">
+<window type="dynv">
+<height type="int32">164</height>
+<width type="int32">369</width>
+</window>
+</converters>
+<export type="dynv">
+<filter type="string">*.txt</filter>
+</export>
+<generate_scheme type="dynv">
+<hsv_shift type="float" list="true"><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li></hsv_shift>
+<hue type="float">202</hue>
+<lightness type="float">18</lightness>
+<saturation type="float">102</saturation>
+<type type="int32">9</type>
+<wheel_locked type="bool">true</wheel_locked>
+<wheel_type type="int32">0</wheel_type>
+</generate_scheme>
+<import type="dynv">
+<background type="string">none</background>
+<converter type="string">color_web_hex</converter>
+<include_color_names type="bool">true</include_color_names>
+<item_size type="string">medium</item_size>
+<path type="string">/home/terminus</path>
+</import>
+<layout_preview type="dynv">
+<css_selectors type="dynv">
+<assignments type="dynv">
+<menu_b type="dynv">
+<color type="color">0.7 0.7 0.7 0</color>
+</menu_b>
+<navitem_b type="dynv">
+<color type="color">0.3 0.3 0.3 0</color>
+</navitem_b>
+<navitem_bh type="dynv">
+<color type="color">0.3 0.3 0.3 -5.83199e-38</color>
+</navitem_bh>
+<navitem_t type="dynv">
+<color type="color">0.8 0.8 0.8 0</color>
+</navitem_t>
+<navitem_th type="dynv">
+<color type="color">0.8 0.8 0.8 0</color>
+</navitem_th>
+</assignments>
+</css_selectors>
+<layout_name type="string">std_layout_menu_1</layout_name>
+</layout_preview>
+<main type="dynv">
+<color_source type="string">color_picker</color_source>
+<paned_position type="int32">488</paned_position>
+<save type="dynv">
+<path type="string">/home/terminus</path>
+</save>
+<secondary_color_source type="string"></secondary_color_source>
+<vertical_paned_position type="int32">0</vertical_paned_position>
+<window type="dynv">
+<height type="int32">448</height>
+<width type="int32">740</width>
+<x type="int32">61</x>
+<y type="int32">13</y>
+</window>
+</main>
+<paned_position type="int32">69</paned_position>
+<picker type="dynv">
+<contrast type="dynv">
+<color type="color">1 1 1 3.07921e-41</color>
+</contrast>
+<expander type="dynv">
+<cmyk type="bool">true</cmyk>
+<hsl type="bool">false</hsl>
+<hsv type="bool">false</hsv>
+<info type="bool">true</info>
+<lab type="bool">false</lab>
+<lch type="bool">true</lch>
+<rgb type="bool">true</rgb>
+<settings type="bool">false</settings>
+</expander>
+<sampler type="dynv">
+<falloff type="int32">0</falloff>
+<oversample type="int32">0</oversample>
+</sampler>
+<swatch type="dynv">
+<active_color type="int32">6</active_color>
+<color1 type="color">0.709804 0.854902 0.470588 3.07921e-41</color1>
+<color2 type="color">0.729412 0.564706 0.329412 3.07921e-41</color2>
+<color3 type="color">0.129412 0.117647 0.141176 3.07921e-41</color3>
+<color4 type="color">0.815686 0.854902 0.870588 3.07921e-41</color4>
+<color5 type="color">0.643137 0.470588 0.756863 3.07921e-41</color5>
+<color6 type="color">0.975 0.205667 0.365625 3.0879e-41</color6>
+</swatch>
+<zoom type="float">20</zoom>
+<zoom_size type="int32">150</zoom_size>
+</picker>
+<recent type="dynv">
+<files type="string">/home/terminus/.config/material_palenight_colors</files>
+</recent>
+<tools type="dynv">
+<color_space_sampler type="dynv">
+<axis0 type="dynv">
+<max_value type="float">1</max_value>
+<min_value type="float">0</min_value>
+<samples type="int32">12</samples>
+</axis0>
+<axis1 type="dynv">
+<max_value type="float">1</max_value>
+<min_value type="float">0</min_value>
+<samples type="int32">12</samples>
+</axis1>
+<axis2 type="dynv">
+<max_value type="float">1</max_value>
+<min_value type="float">0</min_value>
+<samples type="int32">12</samples>
+</axis2>
+<color_space type="int32">2</color_space>
+<linearization type="bool">false</linearization>
+<show_preview type="bool">true</show_preview>
+<window type="dynv">
+<height type="int32">307</height>
+<width type="int32">454</width>
+</window>
+</color_space_sampler>
+</tools>
+<transformations type="dynv">
+<window type="dynv">
+<height type="int32">196</height>
+<width type="int32">190</width>
+</window>
+</transformations>
+</gpick>
+</root>
