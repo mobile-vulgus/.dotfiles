@@ -1,1 +1,0 @@
-{"net":{"http_server_properties":{"servers":[{"https://www.google.com":{"supports_spdy":true}},{"https://s.ytimg.com":{"supports_spdy":true}},{"https://i.ytimg.com":{"supports_spdy":true}},{"https://yt3.ggpht.com":{"supports_spdy":true}},{"https://fonts.gstatic.com":{"supports_spdy":true}},{"https://www.youtube-nocookie.com":{"supports_spdy":true}}],"version":5}}}

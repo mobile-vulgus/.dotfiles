@@ -1,1 +1,0 @@
-{"xhrTestDomain":"decentraleyes.org","showIconBadge":true,"blockMissing":false,"disablePrefetch":true,"enforceStaging":false,"stripMetadata":true,"whitelistedDomains":{"ap.www.namecheap.com":true,"server250.web-hosting.com:2083":true,"myeeportal.ebix.com":true},"amountInjected":342}
