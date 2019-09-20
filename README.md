@@ -1,4 +1,4 @@
-# README - Dotfiles
+## Configuration
 
 This is my daily driver Debian setup. I started using Linux casually
 about a year ago, along with i3, and I've been learning as I go. 
@@ -7,6 +7,12 @@ If you're just starting out with i3 I recommend reading the [User's
 Guide](https://i3wm.org/docs/userguide.html) and checking out Alex's
 great tutorial series on videos
 [here](https://www.youtube.com/watch?v=j1I63wGcvU4).
+
+I use [Compton](https://github.com/chjj/compton) for compositing effects, and [Rofi](https://github.com/davatorium/rofi) as a dmenu replacement. 
+
+GTK theme is [Fantome](https://github.com/addy-dclxvi/gtk-theme-collections/blob/master/README.md#thunar--geany-fantome) by addy-fe. 
+
+Main font is [bitocra13full](https://github.com/Tecate/bitmap-fonts/blob/master/README.md). i3bar font is Cantarell.
 
 ## Screenshots
 
