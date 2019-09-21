@@ -23,9 +23,16 @@ tutorial videos [here](https://www.youtube.com/watch?v=j1I63wGcvU4).
 ## Screenshots
 
 ![Config workflow](https://github.com/mobile-vulgus/.dotfiles/blob/master/screenshots/2019-09-19-07-45-14.png)
+###### [urxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode)
+running Vim and neofetch.
 
 ![Floating](https://github.com/mobile-vulgus/.dotfiles/blob/master/screenshots/2019-09-19-08-21-08.png)
+###### urxvt running htop, ranger, and Vm with Goyo/Limelight plugins.
+Sample text is from *The Shadow of the Torturer* by Gene Wolfe. 
 
 ![Prophecy Game](https://github.com/mobile-vulgus/.dotfiles/blob/master/screenshots/2019-09-19-08-44-54.png)
+###### urxvt with python code I'm bumbling through for a rudimentary
+[text game](https://github.com/mobile-vulgus/Scripts/tree/master/Prophecy_Game).
 
 ![Wallpaper](https://github.com/mobile-vulgus/.dotfiles/blob/master/screenshots/2019-09-19-07-45-46.png)
+Wallpaper.
